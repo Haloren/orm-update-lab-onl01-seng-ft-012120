@@ -39,7 +39,7 @@ def self.create
   
 end 
 
-def self.new_from_db
+def self.new_from_db()
   
 end 
 
