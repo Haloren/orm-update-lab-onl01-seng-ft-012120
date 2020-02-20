@@ -54,7 +54,9 @@ def self.find_by_name
 end 
 
 def update
-  
+  sql = "UPDATE students SET name = ?, grade = ? WHERE name = ?"
+    DB[:conn].execute(sql, self.name, self.album, self.name)
+  end
 end   
 
   # Remember, you can access your database connection anywhere in this class
