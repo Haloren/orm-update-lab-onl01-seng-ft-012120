@@ -29,7 +29,7 @@ class Student
   
   def save 
     if self.id 
-      self.update 
+      self.update #updates a record if called on an object that is already persisted
     else 
     
     sql = <<-SQL
